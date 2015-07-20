@@ -21,8 +21,9 @@ Things you may want to cover:
 
 * Deployment instructions
 
-#Blocitoff: a self-destructing to-do list to keep you focused on the things that really matter, 
-##by Pam Willenz * * *
+#* * * Blocitoff: a self-destructing to-do list to keep you focused on the things that really matter, by Pam Willenz * * *#
+
+##Heroku app link - https://git.heroku.com/pam-blocitoff##
 
 
 Please feel free to use a different markup language if you do not plan to run
