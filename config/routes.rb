@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'welcome/index'
+  resources :users, only: [:update, :show]
+  
+  authenticated :user do
+    root to: "users#show", as: :authenticated_root, via: :get
+  end
 
-  get 'welcome/about'
-
-  root to: 'welcome#index'
+  unauthenticated do
+    root to: 'welcome#index'
+  end
 
 end
