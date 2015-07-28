@@ -1,6 +1,8 @@
 <div class="media">
   <div id=<%= "item-#{item.id}"%> class="item list-group-item">
-    <% = link_to 'Item Added', user_item_path(@user.id,), method: :delete, romote: true %>
+
+
+    <%= link_to "", [item.user, item], method: :delete, romote: true, class: 'glyphicon glyphicon-ok' %>
     <h4 class= 'list-group-item-heading'><%= item.name %></h4>
     <p class= 'list-group-item-text'><%= time_left(item) %></p>
   </div>

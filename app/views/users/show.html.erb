@@ -6,9 +6,10 @@
   </div>
 <div class="media-body">
     <h2 class="media-heading user-name"> <%= @user.name %>'s To-Do Lists: </h2>
-    <%= render partial: 'items/item', locals: {item: @item} %>
-
-    <%= render partial: 'items/form', locals: {user: @user} %>
+      <%= render partial: 'items/item', collection: @items %>
+    </div>
+    <div class="container">
+      <%= render 'items/form'%>
     </div>
   </div>
 </div>
