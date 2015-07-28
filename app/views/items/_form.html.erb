@@ -1,0 +1,11 @@
+<%= form_for [user, user.items.new] do |f| %>
+  <div class="col-md-4">
+    <div class="form-group">
+      <%= f.label :comment %>
+      <%= f.text_field :name, id: 'item-name', class: 'form-control', placeholder: "Add another to-do item" %>
+    </div>
+    <div class="form-group">
+      <%= f.submit "Add To-Do item", class: 'btn btn-success' %>
+    </div>
+  </div>
+  <% end %>
