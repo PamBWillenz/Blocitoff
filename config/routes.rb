@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  get 'items/create'
+
   devise_for :users
-  resources :users, only: [:update, :show]
+  resources :users, only: [:update, :show] do
+    resources :items, only: [:create, :new]
+  end
   
   authenticated :user do
     root to: "users#show", as: :authenticated_root, via: :get
