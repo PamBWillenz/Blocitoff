@@ -1,16 +1,16 @@
-
-  <div class="text-center">
-    <div class="row">
+<div class="row">
   <div class="col-md-2"></div>
-  <div class="col-md-8">
-    </br>
+    <div class="col-md-8">
+      <div class="text-center">
+  </br>
   </br>
   <div class="media-body">
     <h2 class="media-heading user-name"> <%= @user.name %>'s To-Do Lists: </h2>
-    </div>
+  </div>
   <div class="media">
+    <div class='js-items'>
       <%= render partial: 'items/item', collection: @items %>
-    </br>
+    </div>
     <div class='new-item'>  
     <%= render 'items/form'%>
   </div>
