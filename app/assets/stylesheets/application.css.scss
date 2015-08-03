@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -22,4 +23,23 @@
 
 .nav {
     margin-top: 5px;
+    font-size: 1.5em;
+}
+
+.pull-right.user-info {
+    padding-right: 20px;
+}
+h2 {
+    padding-top: 50px;
+}
+.bloc-item {
+    background-color: #00CCFF;
+    border-color: #006680;
+    color: #E6F0F2;
+    font-size: 1.5em;
+}
+
+.home-link {
+    width: 100%;
+    margin-top: 35%;
 }
