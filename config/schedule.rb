@@ -6,6 +6,7 @@
 # Example:
 #
 # set :output, "/path/to/my/cron_log.log"
+set :environment, 'development' 
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
@@ -19,10 +20,11 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 3.hours do
-  rake "todo: delete_items"
+# every :day, at: '7am'do
+every 2.minutes do
+  rake "todo:delete_items"
 end
 
 every :reboot do
-  rake "todo: delete_items"
+  rake "todo:delete_items"
 end
