@@ -2,5 +2,6 @@
   $('.js-items').prepend("<%= escape_javascript(render(@item)) %>");
   $('.new-item').html("<%= escape_javascript(render partial: 'items/form', locals: { user: @user, item: @new_item }) %>");
 <% else %>
+  // $('.new-item').prepend("<div class='alert alert-danger'><%= flash[:error] %></div>");
   $('.new-item').html("<%= escape_javascript(render partial: 'items/form', locals: { user: @user, item: @item }) %>");
 <% end %>
